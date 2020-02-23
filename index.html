@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap style file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- font awosome syle file-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Tillana:400,500,600,700,800&display=swap" rel="stylesheet">  
+    <!-- style file -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Wether App</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center mt-5">
+                <div class="content p-3">
+                    <div class="city text-uppercase text-center"><span>cairo</span></div>
+                    <div class="image-status"></div>
+
+                    <div class="info">
+                        <ul class="list-unstyled text-capitalize">
+                            <li>Temperature</li>
+                            <li>wind speed</li>
+                            <li>min temp</li>
+                            <li>max temp</li>
+                            <li>humidaty</li>
+                        </ul>
+                    </div>
+                    <div class="add-city">
+                        <a href="#" class="btn btn-block text-center" data-toggle="modal" data-target="#search">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="modal fade" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-capitalize" id="exampleModalLabel">city name</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" name="city" class="form-control" placeholder="Enter City Name">
+                                <button class="btn btn-success" id="btn-search" data-dismiss="modal">search</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- include bootstratp library -->
+    <!-- jquery plugin -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- include main js file -->
+    <script src="js/main.js"></script>
+</body>
+</html>

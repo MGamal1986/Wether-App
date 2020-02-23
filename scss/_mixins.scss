@@ -1,0 +1,6 @@
+// create mixin for image background
+@mixin backImage($src){
+    background:url('#{$src}') no-repeat;
+    background-size: cover;;
+    background-position:center center;
+}
