@@ -13,10 +13,10 @@ $(function(){
         let url_add = '';
         if(units == 'metric'){
             // using Celsius degree
-            url_add = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=${units}`;
+            url_add = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=${units}`;
         }else{
             // using Fahrenheit degree
-            url_add = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=${units}`;
+            url_add = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=${units}`;
         }
         $.getJSON(url_add,function(data){
             
@@ -27,7 +27,7 @@ $(function(){
     }
     wetherApp_1('zagazig');
     // End of function
-    
+
     // add selection function
     $('.menu').on('click',function(){
         $('.search').toggleClass('active');
