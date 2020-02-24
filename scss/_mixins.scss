@@ -11,3 +11,7 @@
     background-color:$color;
     border-radius:50%
 }
+// create mixin for transition
+@mixin easeOut($time:0.4s){
+    transition: all #{$time} ease-out;
+}

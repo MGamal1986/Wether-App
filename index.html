@@ -22,12 +22,16 @@
             <div class="col d-flex justify-content-center align-items-center mt-5">
                 <div class="content d-flex flex-column">
                     <div class="city text-capitalize px-3 py-5 d-flex justify-content-around">
-                        <span class="city-name text-center d-block order-1">cairo</span>
+                        <span class="city-name text-center d-block order-1"></span>
                         <div class="add-city order-0">
-                            <a href="#" class="text-left">
+                            <a href="#" class="text-left menu">
                                 <i class="fa fa-bars"></i>
                                 <!-- <i class="fa fa-times"></i> -->
                             </a>
+                            <div class="search">
+                                <input type="text" id="city" class="form-control mb-2" placeholder="city name">
+                                <input type="submit" value ="search" class="btn" id="btn-search">
+                            </div>
                         </div>
                     </div>
                     <div class="icon">
@@ -36,11 +40,12 @@
                     </div>
                     <div class="info p-3 d-flex justify-content-around align-items-center">
                        <div class="temp d-flex justify-content-center">
-                        <p class="degree">25</p>
-                        <i class="flaticon-040-celsius"></i>
+                        <p class="degree"></p>
+                        <i class="fa fa-thermometer-empty" aria-hidden="true"></i>
+                        <!-- <i class="flaticon-040-celsius"></i> -->
                         </div>
                        <div class="wind-speed d-flex justify-content-center">
-                        <p class="speed">120</p>
+                        <p class="speed"></p>
                         <i class="flaticon-003-wind-6"></i>
                        </div>
                     </div>
@@ -50,7 +55,7 @@
     </div>
     <!-- include bootstratp library -->
     <!-- jquery plugin -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- include main js file -->

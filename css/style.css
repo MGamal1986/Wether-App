@@ -14,6 +14,7 @@ body .content {
   position: relative;
   color: #000;
   font-weight: bold;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 body .content .city {
   height: 50%;
@@ -24,6 +25,9 @@ body .content .city .city-name {
   font-size: 30px;
   margin-top: 15px;
 }
+body .content .city .add-city {
+  position: relative;
+}
 body .content .city .add-city a {
   text-decoration: none;
   color: #000;
@@ -32,6 +36,35 @@ body .content .city .add-city a {
 }
 body .content .city .add-city a:hover {
   color: #000;
+}
+body .content .city .add-city .search {
+  margin: 0;
+  position: absolute;
+  width: 250px;
+  height: 0px;
+  overflow: hidden;
+  background-color: rgba(92, 117, 172, 0.6);
+  top: 59px;
+  z-index: 15;
+  border-radius: 10px;
+  transition: all 0.4s ease-out;
+}
+body .content .city .add-city .search.active {
+  padding: 20px;
+  height: 124px;
+}
+body .content .city .add-city .search .head {
+  text-transform: capitalize;
+}
+body .content .city .add-city .search input {
+  text-transform: capitalize;
+}
+body .content .city .add-city .search input[type=text]::placeholder {
+  color: rgba(92, 117, 172, 0.6);
+}
+body .content .city .add-city .search input[type=submit] {
+  background-color: #5c75ac;
+  color: #fff;
 }
 body .content .icon {
   position: relative;
@@ -60,8 +93,9 @@ body .content .info {
 }
 body .content .info i:before, body .content .info i:after {
   margin-left: 11px;
-  margin-top: -22px;
-  font-size: 27px;
+  font-size: 29px;
+  margin-top: 10px;
+  line-height: 2;
 }
 body .content .info p {
   margin: 0;

@@ -15,6 +15,7 @@ body{
         position: relative;
         color:#000;
         font-weight:bold;
+        box-shadow:0 0 1px 1px rgba(0,0,0,0.5);
         .city{
             height:50%;
             .city-name{
@@ -24,6 +25,7 @@ body{
                 margin-top: 15px;
             }
             .add-city{
+                position: relative;
                 a{
                     text-decoration: none;
                     color:#000;
@@ -33,6 +35,37 @@ body{
                         color:#000;
                     }
                 }
+                .search{
+                    margin:0;
+                    position:absolute;
+                    width:250px;
+                    // height: 177px;
+                    height: 0px;
+                    overflow: hidden;
+                    background-color:rgba(92, 117, 172,0.6);
+                    top: 59px;
+                    z-index:15;
+                    border-radius:10px;
+                    @include easeOut;
+                    &.active{
+                        padding:20px;
+                        height:124px
+                    }
+                    .head{
+                        text-transform: capitalize;
+                    }
+                    input{
+                        text-transform: capitalize;
+                    }
+                    input[type="text"]::placeholder {
+                        color:rgba(92, 117, 172,0.6)
+                    }
+                    input[type="submit"]{
+                        background-color:#5c75ac;
+                        color:#fff;
+                    }
+                }
+
             }
         }
         .icon{
@@ -58,8 +91,9 @@ body{
             font-size:40px;
             i:before,i:after{
                 margin-left: 11px;
-                margin-top: -22px;
-                font-size: 27px;
+                font-size: 29px;
+                margin-top: 10px;
+                line-height: 2;
             }
             p{
                 margin:0;
