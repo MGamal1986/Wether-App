@@ -4,3 +4,10 @@
     background-size: cover;;
     background-position:center center;
 }
+// mixin for circle
+@mixin circle($color,$rad){
+    width:$rad;
+    height:$rad;
+    background-color:$color;
+    border-radius:50%
+}

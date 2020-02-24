@@ -2,53 +2,73 @@
 @import 'mixins';
 // global rules
 *{
-    font-family: 'Tillana';
+    font-family: 'Roboto';
 }
 body{
     height:100vh;
-    @include backImage('../images/rainy_3.jpg');
+    background-color:$bgColor;
     .content{
         width:400px;
         height:550px;
-        background-color:rgba(255,255,255,0.3);
-        border:1px solid rgba(255,255,255,0.8);
+        background-color:rgba(255,255,255,0.9);
         border-radius:10px;
         position: relative;
+        color:#000;
+        font-weight:bold;
         .city{
-            color:#fff;
-            font-weight:700;
-            margin-top:25px;
-            font-size:40px;
+            height:50%;
+            .city-name{
+                margin-right: 108px;
+                font-weight: 700;
+                font-size: 30px;
+                margin-top: 15px;
+            }
+            .add-city{
+                a{
+                    text-decoration: none;
+                    color:#000;
+                    font-size:40px;
+                    cursor: pointer;
+                    &:hover{
+                        color:#000;
+                    }
+                }
+            }
         }
-        .image-status{
-
+        .icon{
+            position: relative;
+            i:before,i:after{
+                font-size:122px;
+                font-weight:normal;
+                position: absolute;
+                top: -165px;
+                left: 115px;
+                z-index: 10;
+            }
+            .circle{
+                @include circle($sunCOlor,50px);
+                position: absolute;
+                left: 200px;
+                top: -126px;
+                z-index: 5;
+            }
         }
         .info{
-            color:#fff;
-            position: absolute;
-            top: 271px;
-            left: 49px;
-            li{
-                margin-bottom:12px;
-                font-size:18px;
-                font-weight:bold;
+            height:50%;
+            font-size:40px;
+            i:before,i:after{
+                margin-left: 11px;
+                margin-top: -22px;
+                font-size: 27px;
             }
-        }
-        .add-city{
-            a{
-                color:#fff;
-                text-decoration: none;
-                font-size:40px;
-                cursor: pointer;
+            p{
+                margin:0;
             }
-        }
-        .modal-content{
-            background-color:rgba(255,255,255,0.5) !important;
-            border:1px solid rgba(255,255,255,0.6) !important;
-            .modal-body{
-                input{
-                    margin-bottom:10px
-                }
+            .temp{
+                
+            }
+            .wind-speed{
+               
             }
         }
     }

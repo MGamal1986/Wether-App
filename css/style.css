@@ -1,50 +1,70 @@
 * {
-  font-family: "Tillana";
+  font-family: "Roboto";
 }
 
 body {
   height: 100vh;
-  background: url("../images/rainy_3.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-color: #5C75AC;
 }
 body .content {
   width: 400px;
   height: 550px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   position: relative;
-}
-body .content .city {
-  color: #fff;
-  font-weight: 700;
-  margin-top: 25px;
-  font-size: 40px;
-}
-body .content .info {
-  color: #fff;
-  position: absolute;
-  top: 271px;
-  left: 49px;
-}
-body .content .info li {
-  margin-bottom: 12px;
-  font-size: 18px;
+  color: #000;
   font-weight: bold;
 }
-body .content .add-city a {
-  color: #fff;
+body .content .city {
+  height: 50%;
+}
+body .content .city .city-name {
+  margin-right: 108px;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 15px;
+}
+body .content .city .add-city a {
   text-decoration: none;
+  color: #000;
   font-size: 40px;
   cursor: pointer;
 }
-body .content .modal-content {
-  background-color: rgba(255, 255, 255, 0.5) !important;
-  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+body .content .city .add-city a:hover {
+  color: #000;
 }
-body .content .modal-content .modal-body input {
-  margin-bottom: 10px;
+body .content .icon {
+  position: relative;
+}
+body .content .icon i:before, body .content .icon i:after {
+  font-size: 122px;
+  font-weight: normal;
+  position: absolute;
+  top: -165px;
+  left: 115px;
+  z-index: 10;
+}
+body .content .icon .circle {
+  width: 50px;
+  height: 50px;
+  background-color: #f9ca24;
+  border-radius: 50%;
+  position: absolute;
+  left: 200px;
+  top: -126px;
+  z-index: 5;
+}
+body .content .info {
+  height: 50%;
+  font-size: 40px;
+}
+body .content .info i:before, body .content .info i:after {
+  margin-left: 11px;
+  margin-top: -22px;
+  font-size: 27px;
+}
+body .content .info p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

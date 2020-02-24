@@ -8,7 +8,9 @@
     <!-- font awosome syle file-->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- google fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Tillana:400,500,600,700,800&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">  
+     <!-- flat icon font style  -->
+     <link rel="stylesheet" href="css/flaticon.css">
     <!-- style file -->
     <link rel="stylesheet" href="css/style.css">
     <title>Wether App</title>
@@ -18,40 +20,30 @@
     <div class="container">
         <div class="row">
             <div class="col d-flex justify-content-center align-items-center mt-5">
-                <div class="content p-3">
-                    <div class="city text-uppercase text-center"><span>cairo</span></div>
-                    <div class="image-status"></div>
-
-                    <div class="info">
-                        <ul class="list-unstyled text-capitalize">
-                            <li>Temperature</li>
-                            <li>wind speed</li>
-                            <li>min temp</li>
-                            <li>max temp</li>
-                            <li>humidaty</li>
-                        </ul>
-                    </div>
-                    <div class="add-city">
-                        <a href="#" class="btn btn-block text-center" data-toggle="modal" data-target="#search">
-                            <i class="fa fa-plus"></i>
-                        </a>
-                    </div>
-                    <div class="modal fade" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-capitalize" id="exampleModalLabel">city name</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                                <input type="text" name="city" class="form-control" placeholder="Enter City Name">
-                                <button class="btn btn-success" id="btn-search" data-dismiss="modal">search</button>
-                            </div>
-                          </div>
+                <div class="content d-flex flex-column">
+                    <div class="city text-capitalize px-3 py-5 d-flex justify-content-around">
+                        <span class="city-name text-center d-block order-1">cairo</span>
+                        <div class="add-city order-0">
+                            <a href="#" class="text-left">
+                                <i class="fa fa-bars"></i>
+                                <!-- <i class="fa fa-times"></i> -->
+                            </a>
                         </div>
-                      </div>
+                    </div>
+                    <div class="icon">
+                        <i class="flaticon-015-sun"></i>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="info p-3 d-flex justify-content-around align-items-center">
+                       <div class="temp d-flex justify-content-center">
+                        <p class="degree">25</p>
+                        <i class="flaticon-040-celsius"></i>
+                        </div>
+                       <div class="wind-speed d-flex justify-content-center">
+                        <p class="speed">120</p>
+                        <i class="flaticon-003-wind-6"></i>
+                       </div>
+                    </div>
                 </div>
             </div>
         </div>
