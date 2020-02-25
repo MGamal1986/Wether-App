@@ -1,0 +1,8 @@
+.city{
+    .city-name{
+        @include mXs{
+            margin-top:7px !important;
+            margin-right: 0 !important;
+        }
+    }
+}

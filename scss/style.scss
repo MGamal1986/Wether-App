@@ -69,25 +69,26 @@ body{
             }
         }
         .icon{
-            position: relative;
+            height:20%;
+            position:relative;
             i:before,i:after{
                 font-size:122px;
                 font-weight:normal;
                 position: absolute;
-                top: -165px;
-                left: 115px;
                 z-index: 10;
+                left: 30%;
+                top: -117px;
             }
             .circle{
                 @include circle($sunCOlor,50px);
-                position: absolute;
-                left: 200px;
-                top: -126px;
+                position: relative;
                 z-index: 5;
+                left: 49%;
+                top: -67px;
             }
         }
         .info{
-            height:50%;
+            height:30%;
             font-size:40px;
             i:before,i:after{
                 margin-left: 11px;
