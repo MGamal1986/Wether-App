@@ -98,12 +98,8 @@ body{
             p{
                 margin:0;
             }
-            .temp{
-                
-            }
-            .wind-speed{
-               
-            }
         }
     }
 }
+// styles for responsive screen
+@import 'mobile';

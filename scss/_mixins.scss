@@ -15,3 +15,50 @@
 @mixin easeOut($time:0.4s){
     transition: all #{$time} ease-out;
 }
+
+// create mixin for responsive screens
+
+/*
+** For extra small screen max width : 576px
+*/
+@mixin mXs{
+    @media screen and (max-width:576px){
+        @content;
+    }
+}
+
+/*
+** For small screen max width : 768px
+*/
+@mixin mSm{
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+
+/*
+** For medium screen max width : 992px
+*/
+@mixin mMd{
+    @media screen and (max-width:992px){
+        @content;
+    }
+}
+
+/*
+** For large screen max width : 1200px
+*/
+@mixin mLg{
+    @media screen and (max-width:1200px){
+        @content;
+    }
+}
+
+/*
+** For extra large screen min width : 1201px
+*/
+@mixin mXl{
+    @media screen and (min-width:1201px){
+        @content;
+    }
+}

@@ -1,3 +1,18 @@
+/*
+** For extra small screen max width : 576px
+*/
+/*
+** For small screen max width : 768px
+*/
+/*
+** For medium screen max width : 992px
+*/
+/*
+** For large screen max width : 1200px
+*/
+/*
+** For extra large screen min width : 1201px
+*/
 * {
   font-family: "Roboto";
 }
