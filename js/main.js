@@ -73,7 +73,7 @@ $(function(){
             $('.temp-section .temp-max').text(data.main.temp_max.toFixed(2));
             $('.temp-section .temp-min').text(data.main.temp_min.toFixed(2));
             $('.degree').text(data.weather[0].description);
-            icon_url = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+            icon_url = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
             $('.icon-image img').attr('src',icon_url);
         });
         $('.search').removeClass('active');
