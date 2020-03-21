@@ -19,20 +19,22 @@
 
 body {
   height: 100vh;
-  background-color: #5C75AC;
+  background: url("../images/bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 body .content {
   width: 400px;
-  height: 550px;
-  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   position: relative;
-  color: #000;
+  background: rgba(255, 255, 255, 0.5);
+  color: #1e3799;
   font-weight: bold;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
 }
 body .content .city {
-  height: 50%;
+  padding: 4rem 0;
 }
 body .content .city .city-name {
   margin-right: 108px;
@@ -45,12 +47,12 @@ body .content .city .add-city {
 }
 body .content .city .add-city a {
   text-decoration: none;
-  color: #000;
+  color: #1e3799;
   font-size: 40px;
   cursor: pointer;
 }
 body .content .city .add-city a:hover {
-  color: #000;
+  color: #1e3799;
 }
 body .content .city .add-city .search {
   margin: 0;
@@ -82,39 +84,26 @@ body .content .city .add-city .search input[type=submit] {
   color: #fff;
 }
 body .content .icon {
-  height: 20%;
-  position: relative;
+  text-transform: capitalize;
+  font-size: 1.5rem;
 }
-body .content .icon i:before, body .content .icon i:after {
-  font-size: 122px;
-  font-weight: normal;
-  position: absolute;
-  z-index: 10;
-  left: 30%;
-  top: -117px;
+body .content .icon .icon-image {
+  text-align: center;
 }
-body .content .icon .circle {
-  width: 50px;
-  height: 50px;
-  background-color: #f9ca24;
-  border-radius: 50%;
-  position: relative;
-  z-index: 5;
-  left: 49%;
-  top: -67px;
+body .content .temp-section {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
-body .content .info {
-  height: 30%;
-  font-size: 40px;
+body .content .temp-section span {
+  padding: 10px;
 }
-body .content .info i:before, body .content .info i:after {
-  margin-left: 11px;
-  font-size: 29px;
-  margin-top: 10px;
-  line-height: 2;
+body .content .temp-section span i {
+  font-size: 23px !important;
 }
-body .content .info p {
-  margin: 0;
+body .content .temp-section > span:nth-of-type(1) {
+  display: block;
 }
 
 @media screen and (max-width: 576px) {

@@ -25,9 +25,40 @@ $(function(){
             $('.speed').html(data.wind.speed);
         });
     }
-    wetherApp_1('zagazig');
+    // wetherApp_1('zagazig');
     // End of function
 
+    /*
+    ** weather app function wetherApp_1 v1.2 using fetch api
+    */
+ 
+    
+    async function weatherApp_2 (city){
+        const units = 'metric';
+        let url_add = '';
+        if(units == 'metric'){
+            // using Celsius degree
+            url_add = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=${units}`;
+        }else{
+            // using Fahrenheit degree
+            url_add = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=${units}`;
+        }
+        const response = await fetch(url_add);
+        const data = await response.json();
+        return data;
+    }      
+    weatherApp_2('zagazig')
+    .then((data)=>{
+        $('.city-name').text(data.name);
+        $('.temp-feel').text(data.main.feels_like.toFixed(2));
+        $('.temp-section .temp-max').text(data.main.temp_max.toFixed(2));
+        $('.temp-section .temp-min').text(data.main.temp_min.toFixed(2));
+        $('.degree').text(data.weather[0].description);
+        icon_url = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        $('.icon-image img').attr('src',icon_url);
+    });
+    
+  
     // add selection function
     $('.menu').on('click',function(){
         $('.search').toggleClass('active');
@@ -35,7 +66,16 @@ $(function(){
     $('#btn-search').on('click',function(e){
         e.preventDefault();
         let city = $('#city').val();
-        wetherApp_1(city);
+        weatherApp_2(city)
+        .then((data)=>{
+            $('.city-name').text(data.name);
+            $('.temp-feel').text(data.main.feels_like.toFixed(2));
+            $('.temp-section .temp-max').text(data.main.temp_max.toFixed(2));
+            $('.temp-section .temp-min').text(data.main.temp_min.toFixed(2));
+            $('.degree').text(data.weather[0].description);
+            icon_url = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+            $('.icon-image img').attr('src',icon_url);
+        });
         $('.search').removeClass('active');
     });
     
