@@ -38,10 +38,10 @@ $(function(){
         let url_add = '';
         if(units == 'metric'){
             // using Celsius degree
-            url_add = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=${units}`;
+            url_add = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=${units}`;
         }else{
             // using Fahrenheit degree
-            url_add = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=${units}`;
+            url_add = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=${units}`;
         }
         const response = await fetch(url_add);
         const data = await response.json();
